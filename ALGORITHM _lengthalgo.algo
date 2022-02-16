@@ -1,0 +1,25 @@
+ALGORITHM _length
+VAR
+    ch : CHAR
+    counter1,counter2,counter3 : INTEGER
+    
+
+BEGIN
+ 
+FOR counter1 FROM 0 TO ch.length STEP step  DO
+ counter1:=counter1 + 1
+END_FOR
+FOR counter2 FROM 1 TO ch.length STEP step  DO
+    IF (ch[counter2]:= " " ) THEN
+        counter2:=counter2+1
+    END_IF
+    END_FOR
+    FOR counter3 FROM 0 TO ch.length STEP step  DO
+        IF (ch[counter3]:="a" OR ch[counter3]:="e" OR ch[counter3]:="i" 
+        OR ch[counter3]:="o" OR ch[counter3]:="u") THEN
+            counter3:=counter3+1
+        END_IF
+    END_FOR
+
+
+END
